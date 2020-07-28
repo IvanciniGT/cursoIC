@@ -21,3 +21,4 @@ mvn GOLE_NAME
     - test-compile:     Compilar los test unitarios
     - test:             Ejecutar todas las pruebas unitarias
     - package:          Empaquetar proyecto
+    - install:          Incluir nuestro artefacto en el repo local de maven
