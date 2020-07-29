@@ -33,8 +33,15 @@ docker-compose (up/down/stop/start) -d (-d = en segundo plano)
     stop: los para si están arrancados
     
 
+# Ejecutar comandos dentro de un contenedor
+docker exec CONTENEDOR COMANDO
+docker exec -it CONTENEDOR COMANDO
 
-
+#Copiar archivos entre contenedor y host
+docker cp ORIGEN DESTINO
+    Tanto en origen como en destino, yo puedo preceder la ruta de "CONTENEDOR:"
+    Ejemplo: docker cp mitomcat:/etc/config ./configcopiada
+    Ejemplo: docker cp /etc/config mitomcat:/configcopiada
 
 
 
